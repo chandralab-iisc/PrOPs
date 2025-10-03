@@ -2,7 +2,8 @@
 Precision Oncopanels (PrOPs)- An algorithm to identify short individualised actionable panels that can guide cancer treatment
 
 PrOPs can be run by using the wrapper script as
-bash wrapper.sh 
+bash wrapper.sh <sample_id> <mut_file> <deg_file> <node_file> <network> <pathlength_cutoff> <sp_mode> <maxcover_cutoff>
+
 This algorithm requires the following inputs:
 1. Node weight file which contains the foldchange values of the gene in condition with respect to the control,
 2. Mutation file that contains a list of all mutated genes in that patient.
