@@ -1,7 +1,7 @@
 #sruti - modified on 20.01.2025
 #write to shrisrutis@gmail.com for queries.
 
-#run as predd_pipeline.sh <sample_id> <3> <Active>
+#run as bash predd_pipeline.sh <sample_id> <3> <Active>
 
 #This script takes in sample name, network file, pathlength threshold, edge wt calculation modes (Active, Repressed or perturbed)
 #And calculates 
