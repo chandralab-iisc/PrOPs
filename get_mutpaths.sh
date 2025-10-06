@@ -12,20 +12,16 @@ echo $file;
 file_quant=$1"_sp.txt_score_quantile";
 
 mutfile=$1"_mutation.txt";
-#intfile=$name"_toppath_int";
-#wtfile=$edgewt_dir"/"$name"_edgewt_repressed";
 wtfile=$1"_edgewt.tsv";
-
-#degfile=$deg_dir"/"$name"_tmm_deg";
 degfile=$1"_deg.txt"
 
-toppath=$name"_toppath";
-toppath_int=$name"_toppath_int";
-toppath_nodes=$name"_toppath_nodes.txt";
+toppath=$1"_toppath";
+toppath_int=$1"_toppath_int";
+toppath_nodes=$1"_toppath_nodes.txt";
 
-toppath_deg=$name'_toppath_deg.txt';
-toppath_mut=$name'_toppath_mut.txt';
-toppath_int_wt=$name'_toppath_int_wt.txt';
+toppath_deg=$1'_toppath_deg.txt';
+toppath_mut=$1'_toppath_mut.txt';
+toppath_int_wt=$1'_toppath_int_wt.txt';
 
 #toppath
 echo "Obtaining mutpaths";
