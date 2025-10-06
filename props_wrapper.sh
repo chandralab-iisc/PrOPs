@@ -24,13 +24,6 @@ network_file="hPPiN2.csv"; #change here for other networks
 edgewt_file="data/"$1"_edgewt.tsv";
 
 script_dir="scripts/"
-#initializing the file names for the toppath metrics
-toppath=$1"_toppath";
-toppath_int=$1"_toppath_int";
-toppath_int_wt=$1'_toppath_int_wt.txt';
-toppath_nodes=$1"_toppath_nodes.txt";
-toppath_deg=$1'_toppath_deg.txt';
-toppath_mut=$1'_toppath_mut.txt';
 
 #---------------------- Edge weight calculation -------------------------------# 
 echo "Calculating edge weights";
@@ -48,7 +41,7 @@ echo "Calculating quantiles";
 Rscript $script_dir/quantile.R $1"_sp_score.txt";
 
 #gets the toppath nodes from the path line a,b,c,d to a\tb,b\tc, etc.
-bash $script_dir/get_mutpaths.sh $toppath
+bash $script_dir/get_mutpaths.sh $1
 
 #---------------------- Max cover algorithm --------------------------------#
 #can change the parameter for the coverage; default: 70
